@@ -1,6 +1,6 @@
-# 160-Team-Duncan
-## Patrick Vacek, Edie Espejo, Chirag Kashyap
-A Analysis of NBA Motion Data.
+# An Analysis of NBA Motion Data.
+### Team Duncan: Patrick Vacek, Edie Espejo, Chirag Kashyap
+
 
 ## Major Goals
 These goals are to be refined as we further explore these data.
