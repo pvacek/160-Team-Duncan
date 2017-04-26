@@ -17,7 +17,7 @@ Here, we will be keeping track of updates and general notes as we proceed with o
 
 ### 2017-04-18
 <ul>
-<li>Ball motion data was formatted into .csv format using bash scripts (_playershot.csv_)</li>
-<li>Ball motion data from above .csv was visually explored (_findshot.py_)</li>
-<li>We will be exploring the conversion of ball coordinates between our two dataset.</li>
+<li>Ball motion data was formatted into .csv format using bash scripts (`playershot.csv`)</li>
+<li>Ball motion data from above .csv was visually explored (`findshot.py`)</li>
+<li>We will be exploring the conversion of ball coordinates between our two datasets</li>
 </ul>
