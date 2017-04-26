@@ -1,5 +1,5 @@
-# An Analysis of NBA Motion Data.
-### Team Duncan: Patrick Vacek, Edie Espejo, Chirag Kashyap
+# An Analysis of NBA Motion Data
+<b>Team Duncan</b>: Patrick Vacek, Edie Espejo, Chirag Kashyap
 
 
 ## Major Goals
