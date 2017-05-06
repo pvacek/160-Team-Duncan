@@ -15,9 +15,15 @@ These data were retrieved from two sources.
 ## Project Updates
 Here, we will be keeping track of updates and general notes as we proceed with our project timeline.
 
+### 2017-05-03
+<ul>
+<li>Information in .csv files for each game should be available by tomorrow</li>
+<li>Exploratory analysis on ball motion for shots in 2016-01-01 CHA @ TOR (game_analysis.ipynb)</li>
+</ul>
+
 ### 2017-04-18
 <ul>
-<li>Ball motion data was formatted into .csv format using bash scripts (`playershot.csv`)</li>
-<li>Ball motion data from above .csv was visually explored (`findshot.py`)</li>
+<li>Ball motion data was formatted into .csv format using bash scripts (playershot.csv)</li>
+<li>Ball motion data from above .csv was visually explored (findshot.py)</li>
 <li>We will be exploring the conversion of ball coordinates between our two datasets</li>
 </ul>
