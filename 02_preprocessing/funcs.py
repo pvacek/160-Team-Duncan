@@ -30,6 +30,12 @@ def NBA_to_SportVU(game):
     X=game.LOC_Y/10+5
     X_star=np.array(game.SIDE=="Left")*X+np.array(game.SIDE=="Right")*(94-X)
     return(np.array([X_star,Y_star]).T)
+
+def makePlayerList(game):
+    players_list=game.loc[game[["PLAYER_ID","PLAYER_NAME"]].duplicated()==False][["PLAYER_ID","PLAYER_NAME","TEAM_NAME"]]
+    players_list=players_list.set_index(players_list.PLAYER_ID.values.astype(int))
+    players_list=players_list.drop("PLAYER_ID",1)
+    return(players_list)
 	
 def distMat(row):
     ball_xy=row[4:6]
