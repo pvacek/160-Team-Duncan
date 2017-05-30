@@ -15,6 +15,13 @@ These data were retrieved from two sources.
 ## Project Updates
 Here, we will be keeping track of updates and general notes as we proceed with our project timeline.
 
+### 2017-05-29
+<ul>
+<li>Function to find relative minima and maxima created</li>
+<li>Fit polynomials to ball motion data</li>
+<li>Pairwise plots of coefficients and features generated</li>
+</ul>
+
 ### 2017-05-03
 <ul>
 <li>Information in .csv files for each game should be available by tomorrow</li>
