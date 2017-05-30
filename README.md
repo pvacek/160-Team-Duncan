@@ -1,4 +1,4 @@
-# An Analysis of NBA Motion Data
+# An Analysis of NBA Ball Motion Data
 <b>Team Duncan</b>: Patrick Vacek, Edie Espejo, Chirag Kashyap
 
 
@@ -10,7 +10,7 @@ These goals are to be refined as we further explore these data.
 </ol>
 
 ## Data
-These data were retrieved from two sources.
+15GB of ball motion data were downloaded online, then reformatted into separate .csv files per game.
 
 ## Project Updates
 Here, we will be keeping track of updates and general notes as we proceed with our project timeline.
