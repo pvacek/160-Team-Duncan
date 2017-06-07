@@ -15,6 +15,14 @@ These goals are to be refined as we further explore these data.
 ## Project Updates
 Here, we will be keeping track of updates and general notes as we proceed with our project timeline.
 
+### 2017-06-07
+<ul>
+<li>Shot algorithm and machine learning method comparison is almost done</li>
+<li>Dribbling will no longer be a main aspect of our project, but code exists</li>
+<li>Passing is almost done, using gradient functions</li>
+<li>Our final report is on the way!</li>
+</ul>
+
 ### 2017-05-29
 <ul>
 <li>Function to find relative minima and maxima created</li>
