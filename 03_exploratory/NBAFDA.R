@@ -164,3 +164,13 @@ classification_data<-data.frame(model=table_models,data=table_data,subjects=tabl
                                 sensitivity=metrics[,2],specifity=metrics[,3])
 
 write.csv(classification_data,'classdata.csv',row.names=FALSE)
+
+#BONUS code: Write baseline classification trees based on polynomials and eigenfunctions
+
+library(party)
+
+tree1<-ctree(outcome~.,data=zfd_data)
+
+plot(tree1)
+
+tree2<-ctree(outcome~.,data=z_est)
