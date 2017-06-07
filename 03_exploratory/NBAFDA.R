@@ -125,9 +125,21 @@ fit1_imp<-importance(fit1)
 
 pred1<-predict(fit1,z_data[test,])
 
-table(z_data$outcome[test],pred1)
+rf_table1<-table(z_data$outcome[test],pred1)
 
 plot(fit1_imp[,4],type='l',xlab="time points",ylab="Importance",main="Which time points affect prediction?")
+
+#Model with both polynomial and eigenfunction coefficients
+
+z_combined<-data.frame(zfd_data[,-5],z_est)
+
+fit2<-randomForest(outcome~.,data=z_combined,subset=train,importance=TRUE,proximity=TRUE)
+
+pred2<-predict(fit2,z_combined[test,])
+
+rf_table2<-table(z_combined$outcome[test],pred2)
+
+varImpPlot(fit2,type=2,main="Variable importance of shot features")
 
 #Combining the table results
 
@@ -139,12 +151,12 @@ tableMetrics<-function(table){
 }
 
 tables_list<-list(qda_full,qda_jump,qda_eigen_full,qda_eigen_jump,
-                  svm_full,svm_jump,svm_eigen,svm_eigen_jump)
-table_models<-c(rep("QDA",4),rep("SVM",4))
-table_data<-rep(rep(c("Polynomial Coefficients","Eigenfunctions"),each=2),2)
-table_subjects<-rep(c("All shots","Jump shots"),4)
-numTrain<-rep(c(1000,400),4)
-numTest<-rep(c(nrow(shotsxyz)-1000,length(jump_index)-400),4)
+                  svm_full,svm_jump,svm_eigen,svm_eigen_jump,rf_table1,rf_table2)
+table_models<-c(rep("QDA",4),rep("SVM",4),rep("Random Forest",2))
+table_data<-c(rep(rep(c("Polynomial Coefficients","Eigenfunctions"),each=2),2),"Time Points","Poly+Eigen")
+table_subjects<-c(rep(c("All shots","Jump shots"),4),rep("All Shots",2))
+numTrain<-c(rep(c(1000,400),4),rep(1000,2))
+numTest<-c(rep(c(nrow(shotsxyz)-1000,length(jump_index)-400),4),rep(nrow(shotsxyz)-1000,2))
 metrics<-t(sapply(tables_list,tableMetrics))
 
 classification_data<-data.frame(model=table_models,data=table_data,subjects=table_subjects,
