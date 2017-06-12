@@ -15,6 +15,14 @@ These goals are to be refined as we further explore these data.
 ## Project Updates
 Here, we will be keeping track of updates and general notes as we proceed with our project timeline.
 
+### 2017-06-12
+<ul>
+<li>Our project has been completed featuring two classification goal assessments</li>
+<li>A comprehensive report of our project may be found <a href="https://github.com/pvacek/160-Team-Duncan/blob/master/project_slam_dunc_final.pdf">here</a></li>
+<li>Our slideshow presentation may similarly be found <a href="https://github.com/pvacek/160-Team-Duncan/blob/master/project_slam_dunc_slides.pdf">here</a></li>
+<li>The three of us will also be graduating on June 17th -- cheers!</li>
+</ul>
+
 ### 2017-06-07
 <ul>
 <li>Shot algorithm and machine learning method comparison is almost done</li>
