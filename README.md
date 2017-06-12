@@ -2,11 +2,11 @@
 <b>Team Duncan</b>: Patrick Vacek, Edie Espejo, Chirag Kashyap
 
 
-## Major Goals
+## Classifcation Goals
 These goals are to be refined as we further explore these data.
 <ol>
-<li>Understand and recognize player actions based on ball data</li>
-<li>Visualize games appropriately</li>
+<li>Classify when the ball is being shot based on motion data</li>
+<li>Predict which player will be handling the basketball "next"</li>
 </ol>
 
 ## Data
